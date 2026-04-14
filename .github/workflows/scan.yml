@@ -1,0 +1,53 @@
+name: Career-Ops Portal Scan
+
+on:
+  schedule:
+    # Daily at 8:00 AM MT (14:00 UTC)
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Ensure data directory exists
+        run: |
+          mkdir -p data
+          if [ ! -f data/scan-history.tsv ]; then
+            echo -e "url\ttitle\tcompany\tdate\tstatus" > data/scan-history.tsv
+          fi
+          if [ ! -f data/pipeline.md ]; then
+            echo "# Career-Ops Pipeline Inbox" > data/pipeline.md
+            echo "" >> data/pipeline.md
+            echo "Pending URLs for evaluation:" >> data/pipeline.md
+          fi
+
+      - name: Run portal scan
+        run: node scan.mjs
+        env:
+          CI: true
+
+      - name: Commit scan results
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: portal scan results $(date +'%Y-%m-%d')"
+          file_pattern: "data/*.tsv data/*.md"
+          commit_user_name: "career-ops-bot"
+          commit_user_email: "bot@career-ops"
