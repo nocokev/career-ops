@@ -1,0 +1,81 @@
+# Career-Ops Profile — Kevin Prokop
+# Generated: April 2026
+
+candidate:
+  full_name: "Kevin Prokop"
+  email: "kevin.prokop@gmail.com"
+  phone: "+1-970-556-1580"
+  location: "Longmont, CO"
+  linkedin: "linkedin.com/in/kevinprokop"
+  github: "github.com/nocokev"
+
+target_roles:
+  primary:
+    - "Director of Operations"
+    - "VP of Operations"
+    - "Senior Program Manager"
+    - "Chief of Staff"
+    - "Implementation Manager"
+  archetypes:
+    - name: "Operations & Delivery Leader"
+      level: "Director/VP"
+      fit: "primary"
+    - name: "Program/Project Manager"
+      level: "Senior"
+      fit: "primary"
+    - name: "Implementation & Solutions"
+      level: "Manager/Consultant"
+      fit: "secondary"
+    - name: "Strategy & Operations"
+      level: "Senior/Director"
+      fit: "secondary"
+    - name: "Chief of Staff"
+      level: "Director-equivalent"
+      fit: "secondary"
+    - name: "ETA / CEO Through Acquisition"
+      level: "Executive"
+      fit: "adjacent"
+
+narrative:
+  headline: "Operations & Delivery Leader — 12+ years turning ambiguity into measurable execution"
+  exit_story: "Built and scaled operations across startups, manufacturing, and enterprise environments. Known for standing up systems from scratch, hitting delivery targets, and making teams perform under pressure."
+  superpowers:
+    - "Standing up operations from zero — processes, KPIs, teams, cadences"
+    - "Cross-functional delivery across engineering, ops, and customer-facing teams"
+    - "Executive-ready reporting and stakeholder alignment"
+    - "Forecasting and planning models that drive real decisions"
+    - "Founder mindset — owns outcomes, not just tasks"
+  proof_points:
+    - name: "Iontra — $2.2M revenue impact"
+      hero_metric: "$2.2M+ revenue impact, 25% forecast accuracy improvement, 30% delivery speed increase"
+    - name: "Vita Inclinata — Manufacturing facility"
+      hero_metric: "Commissioned new manufacturing facility in 3 months, 98% reduction in inventory discrepancies"
+    - name: "Rubicon Water — New business"
+      hero_metric: "$1M new business secured, $1M capex managed"
+    - name: "Home Team Cleaning LLC"
+      hero_metric: "Founded profitable service business with remote-first ops systems"
+
+compensation:
+  target_range: "$110K-$175K"
+  currency: "USD"
+  minimum: "$100K"
+  location_flexibility: "Remote preferred; hybrid OK within 50-min drive of Longmont CO; onsite within Front Range CO only"
+
+location:
+  country: "United States"
+  city: "Longmont, CO"
+  timezone: "MST/MDT"
+  visa_status: "US Citizen, no sponsorship needed"
+  commute_limit_minutes: 50
+  onsite_ok_cities:
+    - "Boulder"
+    - "Fort Collins"
+    - "Loveland"
+    - "Broomfield"
+    - "Lafayette"
+    - "Erie"
+    - "Denver"
+    - "Aurora"
+    - "Westminster"
+    - "Arvada"
+    - "Greeley"
