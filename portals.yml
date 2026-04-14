@@ -1,5 +1,6 @@
 # Career-Ops Portal Config — Kevin Prokop
-# Ops/PM/CoS roles — Front Range CO + Remote US
+# Ops/PM/CoS/Director roles — Front Range CO + Remote US
+# Only companies with confirmed working Greenhouse/Ashby/Lever APIs
 
 title_filter:
   positive:
@@ -28,6 +29,8 @@ title_filter:
     - "Regional Operations"
     - "Manufacturing Operations"
     - "Production Manager"
+    - "Business Operations"
+    - "Revenue Operations"
   negative:
     - "Junior"
     - "Intern"
@@ -46,111 +49,78 @@ title_filter:
     - "Warehouse Associate"
     - "TS/SCI"
     - "Clearance Required"
+    - "Accounting"
+    - "Finance Manager"
 
 search_queries:
-  - query: "Director of Operations Colorado remote"
-    sites: ["indeed", "linkedin"]
-  - query: "Senior Program Manager Colorado remote"
-    sites: ["indeed", "linkedin"]
-  - query: "Chief of Staff Colorado remote"
-    sites: ["indeed", "linkedin"]
-  - query: "VP Operations remote United States"
-    sites: ["indeed", "linkedin"]
-  - query: "Implementation Manager remote"
-    sites: ["indeed", "linkedin"]
+  - name: "Greenhouse — Director Ops"
+    query: "site:job-boards.greenhouse.io \"Director of Operations\" OR \"VP Operations\" remote"
+    enabled: true
+  - name: "Greenhouse — Program Manager"
+    query: "site:job-boards.greenhouse.io \"Senior Program Manager\" OR \"Senior Project Manager\" remote"
+    enabled: true
+  - name: "Greenhouse — Chief of Staff"
+    query: "site:job-boards.greenhouse.io \"Chief of Staff\" remote"
+    enabled: true
+  - name: "Ashby — Ops Director"
+    query: "site:jobs.ashbyhq.com \"Director of Operations\" OR \"VP Operations\" OR \"Chief of Staff\" remote"
+    enabled: true
+  - name: "Ashby — Program Manager"
+    query: "site:jobs.ashbyhq.com \"Senior Program Manager\" OR \"Operations Manager\" remote"
+    enabled: true
+  - name: "Lever — Ops Roles"
+    query: "site:jobs.lever.co \"Director of Operations\" OR \"Chief of Staff\" OR \"Program Manager\" remote"
+    enabled: true
 
 tracked_companies:
-  # Colorado-based / strong Front Range presence
-  - name: "EMCOR Group"
-    careers_url: "https://www.emcorgroup.com/careers"
-    ats: "workday"
-    enabled: true
-  - name: "Ball Corporation"
-    careers_url: "https://jobs.ball.com"
-    ats: "workday"
-    enabled: true
-  - name: "Trimble"
-    careers_url: "https://careers.trimble.com"
-    ats: "workday"
-    enabled: true
-  - name: "Xcel Energy"
-    careers_url: "https://jobs.xcelenergy.com"
-    ats: "workday"
-    enabled: true
-  - name: "Lockheed Martin"
-    careers_url: "https://www.lockheedmartinjobs.com"
-    ats: "workday"
-    enabled: true
-  - name: "Raytheon"
-    careers_url: "https://careers.rtx.com"
-    ats: "workday"
-    enabled: true
-  - name: "Leprino Foods"
-    careers_url: "https://leprinofoods.com/careers"
-    ats: "greenhouse"
-    enabled: true
+  # ── Confirmed Greenhouse API ──
   - name: "Samsara"
-    careers_url: "https://www.samsara.com/company/careers"
-    ats: "greenhouse"
+    careers_url: "https://job-boards.greenhouse.io/samsara"
+    api: "https://boards-api.greenhouse.io/v1/boards/samsara/jobs"
     enabled: true
+
+  - name: "Gusto"
+    careers_url: "https://job-boards.greenhouse.io/gusto"
+    api: "https://boards-api.greenhouse.io/v1/boards/gusto/jobs"
+    enabled: true
+
+  - name: "Airtable"
+    careers_url: "https://job-boards.greenhouse.io/airtable"
+    api: "https://boards-api.greenhouse.io/v1/boards/airtable/jobs"
+    enabled: true
+
+  - name: "Asana"
+    careers_url: "https://job-boards.greenhouse.io/asana"
+    api: "https://boards-api.greenhouse.io/v1/boards/asana/jobs"
+    enabled: true
+
+  - name: "Lattice"
+    careers_url: "https://job-boards.greenhouse.io/lattice"
+    api: "https://boards-api.greenhouse.io/v1/boards/lattice/jobs"
+    enabled: true
+
+  # ── Confirmed Ashby API ──
+  - name: "Notion"
+    careers_url: "https://jobs.ashbyhq.com/notion"
+    enabled: true
+
+  - name: "Deel"
+    careers_url: "https://jobs.ashbyhq.com/deel"
+    enabled: true
+
+  - name: "ClickUp"
+    careers_url: "https://jobs.ashbyhq.com/clickup"
+    enabled: true
+
+  - name: "n8n"
+    careers_url: "https://jobs.ashbyhq.com/n8n"
+    enabled: true
+
+  - name: "Linear"
+    careers_url: "https://jobs.ashbyhq.com/linear"
+    enabled: true
+
+  # ── Confirmed Lever API ──
   - name: "Palantir"
     careers_url: "https://jobs.lever.co/palantir"
-    ats: "lever"
-    enabled: true
-  - name: "Gusto"
-    careers_url: "https://gusto.com/about/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Ibotta"
-    careers_url: "https://home.ibotta.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Corden Pharma"
-    careers_url: "https://www.cordenpharma.com/careers"
-    ats: "workday"
-    enabled: true
-  # Remote-first / strong ops hiring
-  - name: "Notion"
-    careers_url: "https://www.notion.so/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Airtable"
-    careers_url: "https://airtable.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Asana"
-    careers_url: "https://asana.com/jobs"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Monday.com"
-    careers_url: "https://monday.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "ClickUp"
-    careers_url: "https://clickup.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Rippling"
-    careers_url: "https://www.rippling.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Lattice"
-    careers_url: "https://lattice.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Deel"
-    careers_url: "https://www.deel.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "Linear"
-    careers_url: "https://linear.app/careers"
-    ats: "ashby"
-    enabled: true
-  - name: "Retool"
-    careers_url: "https://retool.com/careers"
-    ats: "greenhouse"
-    enabled: true
-  - name: "n8n"
-    careers_url: "https://n8n.io/careers"
-    ats: "ashby"
     enabled: true
