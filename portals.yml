@@ -1,0 +1,156 @@
+# Career-Ops Portal Config — Kevin Prokop
+# Ops/PM/CoS roles — Front Range CO + Remote US
+
+title_filter:
+  positive:
+    - "Director of Operations"
+    - "VP of Operations"
+    - "Vice President of Operations"
+    - "Director Operations"
+    - "Operations Director"
+    - "Program Manager"
+    - "Project Manager"
+    - "Senior Program Manager"
+    - "Senior Project Manager"
+    - "Operations Manager"
+    - "Senior Operations Manager"
+    - "Chief of Staff"
+    - "Head of Operations"
+    - "Implementation Manager"
+    - "Implementation Consultant"
+    - "Strategy and Operations"
+    - "Strategy & Operations"
+    - "Business Value"
+    - "Insights and Operations"
+    - "Category Manager"
+    - "Director of Delivery"
+    - "Delivery Manager"
+    - "Regional Operations"
+    - "Manufacturing Operations"
+    - "Production Manager"
+  negative:
+    - "Junior"
+    - "Intern"
+    - "Internship"
+    - "Entry Level"
+    - "Co-op"
+    - "Software Engineer"
+    - "Data Engineer"
+    - "Systems Engineer"
+    - "Mechanical Engineer"
+    - "Electrical Engineer"
+    - "Food and Beverage"
+    - "Restaurant"
+    - "Retail"
+    - "Driver"
+    - "Warehouse Associate"
+    - "TS/SCI"
+    - "Clearance Required"
+
+search_queries:
+  - query: "Director of Operations Colorado remote"
+    sites: ["indeed", "linkedin"]
+  - query: "Senior Program Manager Colorado remote"
+    sites: ["indeed", "linkedin"]
+  - query: "Chief of Staff Colorado remote"
+    sites: ["indeed", "linkedin"]
+  - query: "VP Operations remote United States"
+    sites: ["indeed", "linkedin"]
+  - query: "Implementation Manager remote"
+    sites: ["indeed", "linkedin"]
+
+tracked_companies:
+  # Colorado-based / strong Front Range presence
+  - name: "EMCOR Group"
+    careers_url: "https://www.emcorgroup.com/careers"
+    ats: "workday"
+    enabled: true
+  - name: "Ball Corporation"
+    careers_url: "https://jobs.ball.com"
+    ats: "workday"
+    enabled: true
+  - name: "Trimble"
+    careers_url: "https://careers.trimble.com"
+    ats: "workday"
+    enabled: true
+  - name: "Xcel Energy"
+    careers_url: "https://jobs.xcelenergy.com"
+    ats: "workday"
+    enabled: true
+  - name: "Lockheed Martin"
+    careers_url: "https://www.lockheedmartinjobs.com"
+    ats: "workday"
+    enabled: true
+  - name: "Raytheon"
+    careers_url: "https://careers.rtx.com"
+    ats: "workday"
+    enabled: true
+  - name: "Leprino Foods"
+    careers_url: "https://leprinofoods.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Samsara"
+    careers_url: "https://www.samsara.com/company/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Palantir"
+    careers_url: "https://jobs.lever.co/palantir"
+    ats: "lever"
+    enabled: true
+  - name: "Gusto"
+    careers_url: "https://gusto.com/about/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Ibotta"
+    careers_url: "https://home.ibotta.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Corden Pharma"
+    careers_url: "https://www.cordenpharma.com/careers"
+    ats: "workday"
+    enabled: true
+  # Remote-first / strong ops hiring
+  - name: "Notion"
+    careers_url: "https://www.notion.so/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Airtable"
+    careers_url: "https://airtable.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Asana"
+    careers_url: "https://asana.com/jobs"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Monday.com"
+    careers_url: "https://monday.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "ClickUp"
+    careers_url: "https://clickup.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Rippling"
+    careers_url: "https://www.rippling.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Lattice"
+    careers_url: "https://lattice.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Deel"
+    careers_url: "https://www.deel.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "Linear"
+    careers_url: "https://linear.app/careers"
+    ats: "ashby"
+    enabled: true
+  - name: "Retool"
+    careers_url: "https://retool.com/careers"
+    ats: "greenhouse"
+    enabled: true
+  - name: "n8n"
+    careers_url: "https://n8n.io/careers"
+    ats: "ashby"
+    enabled: true
