@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/nocokev/career-ops/compare/v1.5.0...v1.5.1) (2026-04-14)
+
+
+### Bug Fixes
+
+* remove npm cache (no package-lock.json) ([83b7d84](https://github.com/nocokev/career-ops/commit/83b7d842b826d48b00b13d51534671dad7bbbe8b))
+
 ## [1.5.0](https://github.com/santifer/career-ops/compare/v1.4.0...v1.5.0) (2026-04-14)
 
 
